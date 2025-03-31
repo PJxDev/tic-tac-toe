@@ -153,7 +153,7 @@ function App() {
     if (isVsCpu && turn !== playerMark) {
       cpuMoves(playerWin)
     }
-    return () => {}
+    return
   }, [cuadricula])
 
   const handleWin = () => {
@@ -173,7 +173,7 @@ function App() {
   }
   const checkWinner = (props: { cuadricula: Cuadricula }): boolean => {
     const { cuadricula } = props
-    let winner: boolean = false
+    let winner = false
 
     WIN_CONDITIONS.forEach((condition) => {
       const [a, b, c] = condition
