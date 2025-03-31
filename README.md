@@ -63,7 +63,11 @@ Desafío de Front-end Mentor sobre el juego clásico de tres en raya (tic-tac-to
 
 ## 📸 Capturas de Pantalla
 
-*(Agrega aquí imágenes o gifs del juego en funcionamiento)*
+### Pantalla Principal
+![Pantalla Principal](/main-screen.png)
+
+### Pantalla del Juego
+![Pantalla del Juego](/game-screen.png)
 
 ---
 
@@ -75,6 +79,11 @@ Desafío de Front-end Mentor sobre el juego clásico de tres en raya (tic-tac-to
 
 ---
 
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+---
 
 ## 🤝 Contribuciones
 
