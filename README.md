@@ -1,54 +1,90 @@
-# React + TypeScript + Vite
+# Tic-Tac-Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desafío de Front-end Mentor sobre el juego clásico de tres en raya (tic-tac-toe) construido con **React**, **TypeScript**, y **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## 🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎮 Modo de juego contra otro jugador o contra la CPU.
+- 💾 Gestión de estado global con React Context.
+- 💅 Estilos modernos y responsivos usando Tailwind CSS.
+- 📈 Registro de resultados (victorias, empates).
+- 📱 Soporte para dispositivos móviles (Mobile First).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Estructura del Proyecto
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+📁 src/
+├── 📂 components/       # Componentes reutilizables (Botones, Banner, etc.)
+├── 📂 context/          # Contextos globales para gestión de estado
+├── 📂 hooks/            # Custom hooks (e.g., manejo del juego, reseteo)
+└── App.tsx             # Componente principal
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Instalación
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+1. Clonar el repositorio:
+
+```bash
+  git clone <URL_DEL_REPOSITORIO>
 ```
+
+2. Instalar dependencias:
+
+```bash
+  npm install
+```
+
+3. Iniciar la aplicación en modo desarrollo:
+
+```bash
+  npm run dev
+```
+
+4. Abrir en tu navegador:
+
+```
+  http://localhost:3000
+```
+
+---
+
+## 📌 Uso
+
+- En la pantalla principal, selecciona si deseas jugar contra la CPU o contra otro jugador.
+- Escoge si deseas ser **X** o **O**.
+- Comienza a jugar y lleva el registro de las victorias y empates.
+- Puedes reiniciar el juego o volver al menú principal en cualquier momento.
+
+---
+
+## 📸 Capturas de Pantalla
+
+*(Agrega aquí imágenes o gifs del juego en funcionamiento)*
+
+---
+
+## 📝 Tecnologías Utilizadas
+
+- **React** con **TypeScript**
+- **Tailwind CSS** para estilos
+- **Vite** como bundler
+
+---
+
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Si deseas mejorar algo o agregar nuevas características, siéntete libre de abrir un issue o un pull request.
+
+---
+
+## 📧 Contacto
+
+Creador: Pedro J. Cruces
+E-mail: PJxp44@gmail.com
+
+---
